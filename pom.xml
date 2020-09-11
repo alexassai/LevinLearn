@@ -8,5 +8,39 @@
     <artifactId>LevinLearn</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- Add Spring repoistories -->
+    <!-- (you don't need this if you are using a .RELEASE version) -->
+    <repositories>
+        <repository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/snapshot</url>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <url>http://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/snapshot</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <url>http://repo.spring.io/milestone</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+
+    <dependencies>
+        <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-agroal</artifactId>
+        <version>5.4.21.Final</version>
+        <type>pom</type>
+    </dependency>
+    </dependencies>
+
 
 </project>
